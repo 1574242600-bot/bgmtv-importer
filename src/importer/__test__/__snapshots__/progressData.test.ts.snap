@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`合并重复的进度数据 1`] = `
+Array [
+  Object {
+    "id": 3,
+    "watchedVols": 3,
+  },
+  Object {
+    "id": 1,
+    "status": "dropped",
+    "watchedEps": Array [
+      1,
+      2,
+    ],
+    "watchedVols": undefined,
+  },
+  Object {
+    "id": 2,
+    "status": "do",
+    "watchedEps": Array [
+      1,
+      2,
+      3,
+    ],
+    "watchedVols": 3,
+  },
+]
+`;

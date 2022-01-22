@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "lib": ["ESNext"],
+        "module": "commonjs",
+        "target": "ESNext",
+        "baseUrl": "src",
+        "rootDir": ".",
+        "outDir": "build/",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "declaration": true,
+        "paths": {
+            "@utils/*": ["utils/*"],
+            "@bangumi/*": ["bangumi/*"],
+            "@importer/*": ["importer/*"]
+        }
+    },
+    "include": [
+        "./src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "./src/**/__test__",
+        "./src/ui"
+    ]
+}

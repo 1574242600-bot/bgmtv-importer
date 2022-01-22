@@ -1,0 +1,48 @@
+{
+  "name": "bgmtv-importer",
+  "version": "0.0.1",
+  "description": "A!",
+  "main": "cli.js",
+  "scripts": {
+    "build": "tsc && tsconfig-replace-paths --project tsconfig.json",
+    "test": "NODE_ENV=test && jest --coverage",
+    "lint": "eslint ./src --ext .ts",
+    "lint:fix": "eslint ./src --ext .ts --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1574242600/bgmtv-importer.git"
+  },
+  "keywords": [
+    "bangumi"
+  ],
+  "author": "Nworm",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/1574242600/bgmtv-importer/issues"
+  },
+  "homepage": "https://github.com/1574242600/bgmtv-importer#readme",
+  "pre-commit": [
+    "lint"
+  ],
+  "devDependencies": {
+    "@types/jest": "^27.0.4",
+    "@types/node-fetch": "2",
+    "@types/yargs": "^17.0.8",
+    "@typescript-eslint/eslint-plugin": "^5.1.0",
+    "@typescript-eslint/parser": "^5.9.1",
+    "bgm-types": "2",
+    "eslint": "^7.28.0",
+    "jest": "^27.0.4",
+    "jest-fetch-mock": "^3.0.3",
+    "pre-commit": "^1.2.2",
+    "ts-jest": "^27.0.3",
+    "tsconfig-replace-paths": "^0.0.11",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "node-fetch": "^2.0.0",
+    "winston": "^3.4.0",
+    "yargs": "^17.3.1"
+  }
+}

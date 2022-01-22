@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`找到重复项, 返回其索引信息 1`] = `
+Object {
+  "2": Array [
+    1,
+    2,
+  ],
+}
+`;
