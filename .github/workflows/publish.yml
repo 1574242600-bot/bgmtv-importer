@@ -21,11 +21,14 @@ jobs:
         run: |
           npm run build
           mv package.json build/src
+          mv README.md build/src
+          mv LICENSE build/src
       - name: Upload build/src
         uses: actions/upload-artifact@v2
         with:
           name: built
           path: build/src
+          retention-days: 1
           
   publish-npm:
     needs: build
