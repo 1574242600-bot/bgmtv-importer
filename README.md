@@ -1,5 +1,6 @@
 # Bgmtv-importer
 [![Test](https://github.com/1574242600/bangumi-importer/actions/workflows/test.yml/badge.svg?branch=dev)](https://github.com/1574242600/bangumi-importer/actions/workflows/test.yml)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2F1574242600%2Fbgmtv-importer.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2F1574242600%2Fbgmtv-importer?ref=badge_shield)
 
 一个 Bangumi.tv 条目观看进度导入器。
 
@@ -61,3 +62,6 @@ $ npx bgmtv-importer reimport -h
     "progressData": "同'导入'"
 }
 ```
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2F1574242600%2Fbgmtv-importer.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2F1574242600%2Fbgmtv-importer?ref=badge_large)
