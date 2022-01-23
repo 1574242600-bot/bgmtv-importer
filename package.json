@@ -2,7 +2,8 @@
   "name": "bgmtv-importer",
   "version": "0.0.2",
   "description": "A!",
-  "main": "cli.js",
+  "main": "./importer/import.js",
+  "bin": "./cli.js",
   "scripts": {
     "build": "tsc && tsconfig-replace-paths --project tsconfig.json",
     "test": "NODE_ENV=test && jest --coverage",
