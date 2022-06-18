@@ -1,4 +1,5 @@
 import fetch, { RequestInit, Response } from 'node-fetch';
+import { USER_AGENT } from './define';
 
 class BangumiRequest {
     protected origin = 'https://bgm.tv';
@@ -9,6 +10,11 @@ class BangumiRequest {
 
     public async fetch(path: string, init: RequestInit = {}): Promise<Response> {
         const url = this.origin + path;
+
+        init.headers = Object.assign({}, init.headers, { 
+            'User-Agent': USER_AGENT
+        });
+
         const res = await fetch(url, init);
 
         if (!res.ok) {

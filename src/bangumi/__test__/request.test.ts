@@ -16,6 +16,14 @@ describe('BangumiRequest 类', () => {
         expect(params[0]).toBe('https://bgm.tv/test');
     });
 
+    it('.fetch(): 添加 UA', async () => {
+        fetchMock.mockResponse(() => Promise.resolve({ ok: true, status: 200 }));
+        await BGMRequest.fetch('/');
+
+        const params = fetchMock.mock.calls.pop();
+        expect(params[1]?.headers['User-Agent']).toMatch('1574242600/bgmtv-importer/');
+    });
+
     it('.fetch(): 非 2xx 时抛出异常', () => {
         fetchMock.mockResponse(() => Promise.resolve({ ok: false, status: 500 }));
 
