@@ -1,3 +1,7 @@
+import { version, name, homepage } from '../../package.json';
+
+export const USER_AGENT = `1574242600/${ name }/${ version } (${ homepage })`;
+
 export const enum AuthPaths {
    OATH2_AUTHORIZATION = '/oauth/authorize',
    OATH2_TOKEN = '/oauth/access_token'
