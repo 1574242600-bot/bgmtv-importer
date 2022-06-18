@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@types/jest': ^27.5.2
   '@types/node-fetch': ^2.6.2
-  '@types/yargs': ^17.0.10
+  '@types/yargs': 17.0.8
   '@typescript-eslint/eslint-plugin': ^5.28.0
   '@typescript-eslint/parser': ^5.28.0
   bgm-types: ^2.0.2
@@ -26,7 +26,7 @@ dependencies:
 devDependencies:
   '@types/jest': 27.5.2
   '@types/node-fetch': 2.6.2
-  '@types/yargs': 17.0.10
+  '@types/yargs': 17.0.8
   '@typescript-eslint/eslint-plugin': 5.28.0_ud7mphb6pdgldx2vo4b2qn4ymm
   '@typescript-eslint/parser': 5.28.0_hxadhbs2xogijvk7vq4t2azzbu
   bgm-types: 2.0.2
@@ -799,8 +799,8 @@ packages:
       '@types/yargs-parser': 21.0.0
     dev: true
 
-  /@types/yargs/17.0.10:
-    resolution: {integrity: sha512-gmEaFwpj/7f/ROdtIlci1R1VYU1J4j95m8T+Tj3iBgiBFKg1foE/PSl93bBd5T9LDXNPo8UlNN6W0qwD8O5OaA==}
+  /@types/yargs/17.0.8:
+    resolution: {integrity: sha512-wDeUwiUmem9FzsyysEwRukaEdDNcwbROvQ9QGRKaLI6t+IltNzbn4/i4asmB10auvZGQCzSQ6t0GSczEThlUXw==}
     dependencies:
       '@types/yargs-parser': 21.0.0
     dev: true
